@@ -1,0 +1,36 @@
+<!doctype html>
+<head>
+	<meta charset="utf-8">
+	<title>Task List</title>
+	<link rel="stylesheet" href="assets/index.css" />
+</head>
+
+<body>
+	<header>
+		<h1>Task List</h1>
+	</header>
+	<section>
+		<div id="addTask">
+			<input id="addTaskTextField" type="text"/>
+			<select id="complexityComboBox">
+			  <option>S</option>
+			  <option>M</option>
+			  <option>L</option>
+			</select>
+			<input id='addTaskButton' type='submit' value='Add Task' />
+		</div>
+			<ul id="sortableTodo" class="sortable"></ul>
+			<div id="completedHeader">
+				<span id="completedLabel">Completed Tasks</span>
+				<span id="lastDateLabel">Completion</span>
+				<span id="dateLabel">Start</span>
+				<span id="dateLabel">Creation</span>
+			</div>
+			<ul id="sortableCompleted" class="sortable">
+			</ul>
+	</section>
+	<script src="lib/jquery-2.1.0.min.js"></script>
+	<script src="lib/jquery-ui-1.10.4.min.js"></script>
+	<script src="lib/task-list-base.js"></script>
+</body>
+</html>
