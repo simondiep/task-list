@@ -46,6 +46,8 @@ footer {
 	padding: 5px;
 	height: 20px;
 	cursor: default;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 li.sortable-placeholder {
@@ -63,7 +65,8 @@ li.sortable-placeholder {
 	width: 570px;
 }
 
-#completedHeader {
+#completedTasksHeader {
+	display: none;
 	margin:auto;
 	width: 700px;
 	border: 1px solid #CCC;
