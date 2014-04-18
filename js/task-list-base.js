@@ -1,15 +1,7 @@
 $(document).ready(function() {
 
     function checkWidth() {
-		var windowWidth = $(window).width();
-		if(windowWidth < 400 ) {
-			$('body').width(windowWidth-10);
-		} else if(windowWidth < 750 ) {
-			$('body').width(windowWidth-50);
-		} else {
-			$('body').width(700);
-		}
-		$('#addTaskTextField').width($('body').width() - 150);
+		$('#addTaskTextField').width($('#taskListContainer').width() - 150);
     }
     // Execute on load
     checkWidth();

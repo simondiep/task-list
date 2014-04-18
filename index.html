@@ -1,9 +1,21 @@
 <!doctype html>
 <head>
+	<meta name="viewport" content="initial-scale=1.0">
 	<meta charset="utf-8">
 	<title>Task List</title>
-	<link rel="stylesheet" href="assets/index.css" />
+	<link rel="stylesheet" href="css/index.css" />
+	<!--<link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css">-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="screen" />
+
 	<link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+	
+	<script src="js/jquery-2.1.0.min.js"></script>
+	<!--<script src="js/jquery.mobile-1.4.2.min.js"></script>-->
+	<script src="js/jquery-ui-1.10.4.min.js"></script>
+	<script src="js/jquery-ui-touch-punch-0.2.3.js"></script>
+	<script src="js/task-list-base.js"></script>
+	
+	<script src="js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -14,9 +26,9 @@
 		</div>
 		<h1>Task List</h1>
 	</header>
-	<section>
+	<div id='taskListContainer' class="container narrow">
 		<div id="addTask">
-			<input id="addTaskTextField" type="text"/>
+			<input id="addTaskTextField" type="text" autofocus="autofocus"/>
 			<select id="complexityComboBox">
 			  <option>S</option>
 			  <option>M</option>
@@ -33,9 +45,6 @@
 			</div>
 			<ul id="sortableCompleted" class="sortable">
 			</ul>
-	</section>
-	<script src="lib/jquery-2.1.0.min.js"></script>
-	<script src="lib/jquery-ui-1.10.4.min.js"></script>
-	<script src="lib/task-list-base.js"></script>
+	</div>
 </body>
 </html>
