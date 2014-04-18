@@ -3,10 +3,15 @@
 	<meta charset="utf-8">
 	<title>Task List</title>
 	<link rel="stylesheet" href="assets/index.css" />
+	<link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
 </head>
 
 <body>
 	<header>
+		<div id='saveMethodButtonBar'>
+			<input type="radio" id="radio1" name="radio" checked="checked"><label for="radio1">Local Storage</label>
+			<input type="radio" id="radio2" name="radio" disabled="true"><label for="radio2">Log in not yet available</label>
+		</div>
 		<h1>Task List</h1>
 	</header>
 	<section>
@@ -29,7 +34,6 @@
 			<ul id="sortableCompleted" class="sortable">
 			</ul>
 	</section>
-
 	<script src="lib/jquery-2.1.0.min.js"></script>
 	<script src="lib/jquery-ui-1.10.4.min.js"></script>
 	<script src="lib/task-list-base.js"></script>
