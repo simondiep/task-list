@@ -1,3 +1,6 @@
+Note: This is a first draft and has been vastly expanded into a full-stack app.  https://github.com/simondiep/online-task-list
+Note: This version is browser-based, storing everything in HTML5 local storage.  There is no server-side piece.
+
 task-list
 =========
 
